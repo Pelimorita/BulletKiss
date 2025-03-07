@@ -102,14 +102,15 @@ public class PlayerController : MonoBehaviour
     public void HandleCursosLock() 
     {
         //si oprimimos el click izquierdo desaparece el cursor
-        if (playerControls.actions["LeftClick"].WasPressedThisFrame()) 
+        if (playerControls.actions["LeftClick"].WasPressedThisFrame() && !PauseMenu.isPaused) 
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
 
         //si oprimimos esc volvemos
-        if (playerControls.actions["RightClick"].WasPressedThisFrame() )
+
+        if (playerControls.actions["RightClick"].WasPressedThisFrame() && PauseMenu.isPaused)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
