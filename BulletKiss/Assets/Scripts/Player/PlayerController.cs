@@ -109,7 +109,6 @@ public class PlayerController : MonoBehaviour
         }
 
         //si oprimimos esc volvemos
-
         if (playerControls.actions["RightClick"].WasPressedThisFrame() && PauseMenu.isPaused)
         {
             Cursor.lockState = CursorLockMode.None;
