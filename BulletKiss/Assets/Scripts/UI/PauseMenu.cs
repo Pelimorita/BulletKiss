@@ -29,6 +29,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
         pausePanel.SetActive(true);
         isPaused = true;
+        Cursor.lockState = CursorLockMode.None;    
+        Cursor.visible = true;
     }
     //Resume button continue with the game and the time scale is 1f again
     public void ResumeButton()
@@ -41,8 +43,8 @@ public class PauseMenu : MonoBehaviour
     public void GotoMainMenuButton()
     {
         SceneManager.LoadScene("MainMenu");
-        //Time.timeScale = 1.0f;
-        //isPaused = false;
+        Time.timeScale = 1.0f;
+        isPaused = false;
     }
 
 }

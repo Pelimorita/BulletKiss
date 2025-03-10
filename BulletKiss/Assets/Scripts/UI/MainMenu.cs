@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     //Play button begins the game
     public void PlayButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MovementMechanic");
         Time.timeScale = 1.0f;
     }
     //Credits button send you to the Credits Scene
