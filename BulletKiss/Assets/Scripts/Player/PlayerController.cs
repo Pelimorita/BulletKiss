@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isGrounded = true;
     [SerializeField] private float currentSpeed;
     private Vector3 lastPosition;
+    public static int actualLife;
+    public static int maxLife = 100;
 
     private Vector3 velocity;
 
@@ -53,6 +55,7 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         HandleCursosLock();
+
     }
 
     public void Move()
@@ -124,5 +127,9 @@ public class PlayerController : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public void lifeManager()
+    {
+        
     }
 }
