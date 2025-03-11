@@ -31,12 +31,4 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy")) actualLife -= 10;
-
-        else if (collision.gameObject.CompareTag("Cure") && actualLife < 91) actualLife += 10;
-
-        if (collision.gameObject.CompareTag("Points")) points += 100;
-    }
 }

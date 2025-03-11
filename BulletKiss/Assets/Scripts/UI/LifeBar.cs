@@ -10,7 +10,6 @@ public class LifeBar : MonoBehaviour
     [SerializeField] private int value1;
     [SerializeField] private int maxLife = 100;
     public UnityEngine.UI.Image life;
-    //private PlayerController playerController;
 
     private void Start()
     {
