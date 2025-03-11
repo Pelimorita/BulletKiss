@@ -8,17 +8,16 @@ public class LifeBar : MonoBehaviour
 {
     [Header("Life Bar")]
     [SerializeField] private int value1;
-    [SerializeField] private int value2;
+    [SerializeField] private int maxLife = 100;
     public UnityEngine.UI.Image life;
+    //private PlayerController playerController;
 
     private void Start()
     {
-        
+        value1 = PlayerMovement.actualLife;
     }
     void Update()
     {
-        value1 = PlayerController.actualLife;
-        value2 = PlayerController.maxLife;
-        life.fillAmount = value1 / value2;
+        life.fillAmount = value1 / maxLife;
     }
 }
