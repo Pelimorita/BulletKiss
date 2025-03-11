@@ -13,6 +13,8 @@ public class SpawnManager : MonoBehaviour
     [Header("Control de apariciones del spawn")]
     [SerializeField] private GameObject spawnPrefab; //Lo que va a spawnear
     [SerializeField] private Transform parentObject; //El spawn
+    [SerializeField] private bool flagControl = true;//Solo para probar el navigator
+    [SerializeField] private int controlAppear = 0;//Solo para probar el navigator
 
     [Header("Radio del spawn")]
     [SerializeField] private float minLimit = -5;//Posicion minima del vector inicial
@@ -21,13 +23,18 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         initialSpeedSpawn += timeIncrement * Time.deltaTime;//Controlamos el tiempo
-        
 
-        if (initialSpeedSpawn > timeToSpawn) //si el tiempo inicial es mayor al de spawneo saldrá un enemigo
+        if (initialSpeedSpawn > timeToSpawn && flagControl == true) //si el tiempo inicial es mayor al de spawneo saldrá un enemigo
         {
             Vector3 posAppear = randomPositionSpawn();
             Instantiate(spawnPrefab, posAppear, Quaternion.identity, parentObject); 
+            controlAppear++;
             initialSpeedSpawn = 0;
+
+            if (controlAppear > 5) 
+            {
+                flagControl = false;               
+            }
         }
     }
 

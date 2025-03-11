@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4423059342459871940}
   - component: {fileID: 4933678846227536755}
   - component: {fileID: 7672529333505855054}
+  - component: {fileID: 5064519122820063463}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -121,7 +122,25 @@ MonoBehaviour:
   timeToSpawn: 2
   timeIncrement: 1
   initialSpeedSpawn: 0
-  spawnPrefab: {fileID: 3604878721604763008, guid: 84563ac0535e7a241990ab9fed425137, type: 3}
-  parentObject: {fileID: 7957530792795072513}
-  minLimit: 0
+  spawnPrefab: {fileID: 0}
+  parentObject: {fileID: 0}
+  flagControl: 1
+  controlAppear: 0
+  minLimit: -5
   maxLimit: 5
+--- !u!208 &5064519122820063463
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3438486605971566376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
