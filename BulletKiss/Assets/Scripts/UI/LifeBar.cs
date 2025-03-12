@@ -7,16 +7,12 @@ using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
 {
     [Header("Life Bar")]
-    [SerializeField] private int value1;
-    [SerializeField] private int maxLife = 100;
+    public static float lifeValue = 100f;
     public UnityEngine.UI.Image life;
 
-    private void Start()
-    {
-        value1 = PlayerMovement.actualLife;
-    }
     void Update()
     {
-        life.fillAmount = value1 / maxLife;
+        lifeValue = Mathf.Clamp(lifeValue, 0, 100);
+        life.fillAmount = lifeValue / 100;
     }
 }

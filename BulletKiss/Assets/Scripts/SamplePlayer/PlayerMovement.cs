@@ -6,9 +6,6 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Player Statistics")]
-    public static int actualLife = 100;
-    public static int points;
     [Header("Player Variables")]
     [SerializeField] private CharacterController controller;
     [SerializeField] private float speed = 6f;
