@@ -6,16 +6,10 @@ using UnityEngine.UI;
 
 public class PointsText : MonoBehaviour
 {
-    public static int points = 0;
+    public int points = 0;
     public TMP_Text score;
-    public float timer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float timer = 0;
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
