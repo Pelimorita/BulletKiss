@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDamage : MonoBehaviour
+public class AddPoints : MonoBehaviour
 {
-    public float damage = 10f;
+    public int pointsToAdd = 100;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            LifeBar.lifeValue -= damage;
+            //PointsText.points += pointsToAdd;
         }
     }
 }
