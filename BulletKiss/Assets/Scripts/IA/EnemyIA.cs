@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class EnemyIA : MonoBehaviour
 {
     [Header("Configuracion de la IA")]
-    [SerializeField] private float radiusMovement = 7f;
+    [SerializeField] private float radiusMovement = 4f;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Vector3 targetPosition;
     // Start is called before the first frame update
