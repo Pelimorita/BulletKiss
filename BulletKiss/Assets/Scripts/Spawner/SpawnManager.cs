@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    #region VARIABLES
     [Header("Control del tiempo de spawn")]
     [SerializeField] private float timeToSpawn = 2f; //Tiempo en el que spawneará cada enemigo
     [SerializeField] private float timeIncrement = 1; //Incremento del tiempo
@@ -19,7 +20,7 @@ public class SpawnManager : MonoBehaviour
     [Header("Radio del spawn")]
     [SerializeField] private float minLimit = -5;//Posicion minima del vector inicial
     [SerializeField] private float maxLimit = 5;//posicion máxima del vector inicial
-   
+    #endregion
     void Update()
     {
         initialSpeedSpawn += timeIncrement * Time.deltaTime;//Controlamos el tiempo
