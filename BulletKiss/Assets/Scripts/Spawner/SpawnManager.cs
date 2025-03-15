@@ -17,8 +17,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private int controlAppear = 0;//Solo para probar el navigator
 
     [Header("Radio del spawn")]
-    [SerializeField] private float minLimit = -5;//Posicion minima del vector inicial
-    [SerializeField] private float maxLimit = 5;//posicion máxima del vector inicial
+    [SerializeField] private float minLimit = -7;//Posicion minima del vector inicial
+    [SerializeField] private float maxLimit = 7;//posicion máxima del vector inicial
    
     void Update()
     {

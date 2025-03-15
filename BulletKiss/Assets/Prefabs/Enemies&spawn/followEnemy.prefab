@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5445365244052727248}
   - component: {fileID: 5059357580769434835}
   - component: {fileID: 3721257165536457829}
+  - component: {fileID: 4889518653415946563}
   m_Layer: 0
   m_Name: followEnemy
   m_TagString: Untagged
@@ -143,6 +144,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94cddf57825ca2c42b9e468daaabfab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 5059357580769434835}
   player: {fileID: 0}
-  radiusDetected: 4
+--- !u!114 &4889518653415946563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928292754881625368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d669215836f0c4eabd64aab32dc774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
