@@ -11,5 +11,12 @@ public class EnemyDamage : MonoBehaviour
         {
             LifeBar.lifeValue -= damage;
         }
-    }
+    }/*
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            LifeBar.lifeValue -= damage;
+        }
+    }*/
 }
