@@ -7,6 +7,10 @@ public class FinishGame : MonoBehaviour
 {
     public GameObject finishPanel;
     public static bool isFinished = false;
+    private void Start()
+    {
+        finishPanel.SetActive(false);
+    }
     private void Update()
     {
         if (LifeBar.lifeValue == 0)

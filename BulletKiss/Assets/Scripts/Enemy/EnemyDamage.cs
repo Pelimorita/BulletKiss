@@ -14,7 +14,7 @@ public class EnemyDamage : MonoBehaviour
     }/*
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.tag == "Player")
         {
             LifeBar.lifeValue -= damage;
         }
