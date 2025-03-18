@@ -14,7 +14,10 @@ public class BallsSpawner : MonoBehaviour
 
     public Vector3 spawnRange;
 
-    public float objectLifetime = 5f; // Tiempo en segundos antes de desaparecer
+    public float objectLifetime = 5f; 
+
+
+
 
     void Update()
     {
@@ -39,7 +42,7 @@ public void Spawn() {
     newSpawnedObject.GetComponent<Rigidbody>().velocity = transform.forward * initialSpeed;
     newSpawnedObject.transform.parent = transform;
 
-    Destroy(newSpawnedObject, objectLifetime); // Destruir después del tiempo definido
+    Destroy(newSpawnedObject, objectLifetime); 
 
 }
 }
