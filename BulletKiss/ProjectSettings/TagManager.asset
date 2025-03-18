@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Cure
   - Points
+  - Ground
+  - Obstacle
   layers:
   - Default
   - TransparentFX
