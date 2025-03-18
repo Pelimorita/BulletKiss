@@ -5,10 +5,11 @@ using UnityEngine;
 public class HealinSpawner : MonoBehaviour
 {
     public GameObject spawnItem; 
-    public float frequency = 5f; 
-    public float initialSpeed = 0f; 
-    public float objectLifetime = 5f; 
+    public float frequency; 
+    public float initialSpeed; 
+    public float objectLifetime; 
     public Vector3 spawnRange; 
+    
 
     void Start()
     {

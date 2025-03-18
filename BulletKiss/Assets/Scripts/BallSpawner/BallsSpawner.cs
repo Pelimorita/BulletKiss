@@ -14,7 +14,7 @@ public class BallsSpawner : MonoBehaviour
 
     public Vector3 spawnRange;
 
-    public float objectLifetime = 5f; 
+    public float objectLifetime; 
 
 
 
