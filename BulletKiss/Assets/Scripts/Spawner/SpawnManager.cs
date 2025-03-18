@@ -20,7 +20,8 @@ public class SpawnManager : MonoBehaviour
     [Header("Radio del spawn")]
     [SerializeField] private float minLimit = -5;//Posicion minima del vector inicial
     [SerializeField] private float maxLimit = 5;//posicion máxima del vector inicial
-   
+    #endregion
+
     void Update()
     {
         initialSpeedSpawn += timeIncrement * Time.deltaTime;//Controlamos el tiempo
