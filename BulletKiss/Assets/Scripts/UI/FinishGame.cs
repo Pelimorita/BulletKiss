@@ -31,7 +31,5 @@ public class FinishGame : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
         Time.timeScale = 1.0f;
-        //PauseMenu.isPaused = false;
-        //isFinished = false;
     }
 }

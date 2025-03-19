@@ -10,7 +10,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
         Time.timeScale = 1.0f;
-        LifeBar.lifeValue = 100f;
     }
     //Credits button send you to the Credits Scene
     public void CreditsButton()
