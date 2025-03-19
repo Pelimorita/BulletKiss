@@ -38,8 +38,8 @@ public class followEnemyIA : MonoBehaviour
 
             ///SUMMARY
             /// Estamos diciendo que si la distancia que se calcula entre el enemigo y el jugador
-            ///es mayor al radio de detección que tiene el enemigo y ademas el no agente tiene una ruta pendiente
-            ///y además de la ruta pendiente le faltan 0.5cm para llegar a su destino entonces calcule una ruta al azar
+            ///es mayor al radio de detecciï¿½n que tiene el enemigo y ademas el no agente tiene una ruta pendiente
+            ///y ademï¿½s de la ruta pendiente le faltan 0.5cm para llegar a su destino entonces calcule una ruta al azar
             ///SUMARY
             
             if (distance > radiusDetected && !agent.pathPending && agent.remainingDistance < 0.5) 
@@ -49,7 +49,7 @@ public class followEnemyIA : MonoBehaviour
         }
     }
 
-    #region Movimiento/detección
+    #region Movimiento/detecciï¿½n
     void randomMove() 
     {
         Vector3 randomDirection = Random.insideUnitSphere * radiusMovement;

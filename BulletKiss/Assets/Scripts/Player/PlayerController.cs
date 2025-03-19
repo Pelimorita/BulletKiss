@@ -23,12 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float currentSpeed;
     private Vector3 lastPosition;
     public static int actualLife;
-    public static int maxLife = 100;
+    public static int maxLife = 100;    
 
     private Vector3 velocity;
 
     [Header("Estidisticas del mundo")]
     [SerializeField] private float gravity = 9.8f;
+    
     private void Awake()
     {
         //Le damos el componente de characterContoller a la variable
@@ -60,6 +61,8 @@ public class PlayerController : MonoBehaviour
 
     public void Move()
     {
+        if(PauseMenu.isPaused || FinishGame.isFinished) return;
+
         //Estamos capturando el movimiento de player controls
         Vector2 _moveHV = playerControls.actions["Move"].ReadValue<Vector2>();
 
@@ -119,17 +122,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool CheckIfGrounded() 
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance)) 
-        {
-            return true;
-        }
-        return false;
-    }
-    public void lifeManager()
-    {
-        
-    }
+    
 }
