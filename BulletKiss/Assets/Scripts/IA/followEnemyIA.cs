@@ -18,6 +18,11 @@ public class followEnemyIA : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
 
     void Update()
