@@ -8,6 +8,10 @@ public class PauseMenu : MonoBehaviour
     [Header("Pause Menu Panel")]
     public GameObject pausePanel;
     public static bool isPaused = false;
+    private void Start()
+    {
+        Debug.Log("esto es PauseMenu" + FinishGame.isFinished);
+    }
     //First, we check if button escape is pushed
     private void Update()
     {

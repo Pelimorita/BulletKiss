@@ -21,12 +21,14 @@ public class StartGameTutorial : MonoBehaviour
     {
         startGamePanel.SetActive(false);
         Time.timeScale = 1.0f;
-        PauseMenu.isPaused = false;
+        //PauseMenu.isPaused = false;
     }
     public void StartGameButton()
     {
         SceneManager.LoadScene("Level1");
         Time.timeScale = 1.0f;
         PauseMenu.isPaused = false;
+        LifeBar.lifeValue = 100f;
+        PointsText.points = 0;
     }
 }
