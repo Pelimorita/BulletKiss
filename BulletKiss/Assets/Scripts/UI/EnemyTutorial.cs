@@ -15,6 +15,7 @@ public class EnemyTutorial : MonoBehaviour
             PauseMenu.isPaused = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            FinishGame.isFinished = true;
         }
     }
     public void ResumeButton()
@@ -22,5 +23,6 @@ public class EnemyTutorial : MonoBehaviour
         enemyPanel.SetActive(false);
         Time.timeScale = 1.0f;
         PauseMenu.isPaused = false;
+        FinishGame.isFinished = false;
     }
 }

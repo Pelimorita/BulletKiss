@@ -17,12 +17,14 @@ public class StartGameTutorial : MonoBehaviour
             Cursor.visible = true;
             LifeBar.lifeValue = 100f;
             PointsText.points = 0;
+            FinishGame.isFinished = true;
         }
     }
     public void ResumeButton()
     {
         startGamePanel.SetActive(false);
         Time.timeScale = 1.0f;
+        FinishGame.isFinished = false;
     }
     public void StartGameButton()
     {
@@ -30,5 +32,6 @@ public class StartGameTutorial : MonoBehaviour
         Time.timeScale = 1.0f;
         LifeBar.lifeValue = 100f;
         PointsText.points = 0;
+        FinishGame.isFinished = false;
     }
 }

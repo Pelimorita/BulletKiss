@@ -14,6 +14,7 @@ public class PointsTurtorial : MonoBehaviour
             PauseMenu.isPaused = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            FinishGame.isFinished = true;
         }
     }
     public void ResumeButton()
@@ -21,5 +22,6 @@ public class PointsTurtorial : MonoBehaviour
         pointsPanel.SetActive(false);
         Time.timeScale = 1.0f;
         PauseMenu.isPaused = false;
+        FinishGame.isFinished = false;
     }
 }

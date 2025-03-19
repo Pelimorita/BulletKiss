@@ -12,6 +12,7 @@ public class CureTutorial : MonoBehaviour
             Time.timeScale = 0;
             curePanel.SetActive(true);
             PauseMenu.isPaused = true;
+            FinishGame.isFinished = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -21,5 +22,6 @@ public class CureTutorial : MonoBehaviour
         curePanel.SetActive(false);
         Time.timeScale = 1.0f;
         PauseMenu.isPaused = false;
+        FinishGame.isFinished = false;
     }
 }
