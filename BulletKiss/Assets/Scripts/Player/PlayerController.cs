@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
         Move();
         Jump();
-        HandleCursosLock();
+        //HandleCursosLock();
 
     }
 
@@ -105,7 +105,6 @@ public class PlayerController : MonoBehaviour
         characterController.Move(velocity * Time.deltaTime);
 
     }
-
     public void HandleCursosLock() 
     {
         //si oprimimos el click izquierdo desaparece el cursor
@@ -122,6 +121,4 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = true;
         }
     }
-
-    
 }

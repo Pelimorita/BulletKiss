@@ -9,6 +9,7 @@ TagManager:
   - Points
   - Ground
   - Obstacle
+  - Start
   layers:
   - Default
   - TransparentFX
