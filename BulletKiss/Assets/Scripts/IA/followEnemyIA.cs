@@ -14,10 +14,12 @@ public class followEnemyIA : MonoBehaviour
     private float radiusDetected = 4;
     private float radiusMovement = 2;
     private Vector3 pos;
+    public Animator EnemyAnimator;
     #endregion
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        EnemyAnimator = GetComponent<Animator>();
 
         if (player == null)
         {

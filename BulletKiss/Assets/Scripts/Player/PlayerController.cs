@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = characterController.isGrounded;//Esta o no en el piso
-        if(tPAnimator) 
         tPAnimator.SetBool("IsGround", isGrounded);
 
         if (isGrounded && velocity.y < 0) 
@@ -89,7 +88,7 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);//rotar al personaje
         }
 
-        if(tPAnimator) 
+    
         tPAnimator.SetFloat("Speed", currentSpeed);
     }
 

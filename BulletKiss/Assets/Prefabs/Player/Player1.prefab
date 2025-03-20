@@ -321,7 +321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c38cffbe6d6904e89ace2d3f26a83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
   score: {fileID: 0}
   timer: 0
 --- !u!1 &6858877244576695959

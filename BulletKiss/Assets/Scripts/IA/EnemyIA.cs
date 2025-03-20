@@ -10,15 +10,18 @@ public class EnemyIA : MonoBehaviour
     [SerializeField] private float radiusMovement = 4f;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private Vector3 targetPosition;
+    public Animator EnemyAnimator;
     // Start is called before the first frame update
     void Start()
     {
+        EnemyAnimator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();//le dice que ese componente es del enemigo
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         if (!agent.pathPending && agent.remainingDistance < 0.5f) 
         {
             randomDestination();

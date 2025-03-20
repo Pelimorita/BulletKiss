@@ -148,6 +148,7 @@ MonoBehaviour:
   radiusMovement: 7
   agent: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
+  EnemyAnimator: {fileID: 7389502048789497105}
 --- !u!114 &1821494799431051356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +170,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2225132517963587173}
     m_Modifications:
+    - target: {fileID: 5030645071554350878, guid: 379cfb6848589a948b84691a4df3bed9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c9b8e8ffbec19c948989e58f8199caa6, type: 2}
     - target: {fileID: 5030645071561653432, guid: 379cfb6848589a948b84691a4df3bed9, type: 3}
       propertyPath: m_Name
       value: C02
@@ -218,6 +223,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 379cfb6848589a948b84691a4df3bed9, type: 3}
+--- !u!95 &7389502048789497105 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5030645071554350878, guid: 379cfb6848589a948b84691a4df3bed9, type: 3}
+  m_PrefabInstance: {fileID: 2548115982443842063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7389502048796437207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5030645071562137816, guid: 379cfb6848589a948b84691a4df3bed9, type: 3}
