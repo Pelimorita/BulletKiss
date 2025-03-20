@@ -33,5 +33,6 @@ public class StartGameTutorial : MonoBehaviour
         LifeBar.lifeValue = 100f;
         PointsText.points = 0;
         FinishGame.isFinished = false;
+        PauseMenu.isPaused = false;
     }
 }

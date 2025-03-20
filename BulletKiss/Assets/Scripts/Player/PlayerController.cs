@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
         speed = walkSpeed;
         lastPosition = transform.position;
+        PauseMenu.isPaused = false;
+        FinishGame.isFinished = false;
     }
 
     // Update is called once per frame
