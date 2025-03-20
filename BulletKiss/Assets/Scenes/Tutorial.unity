@@ -498,6 +498,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6093679946374291887, guid: 186354426764bfa4a87f2e7051363705, type: 3}
+      propertyPath: tPAnimator
+      value: 
+      objectReference: {fileID: 1820987307}
+    - target: {fileID: 8858499153536172996, guid: 186354426764bfa4a87f2e7051363705, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b8f44ea40b51fc344bfa988aa9cad67e, type: 2}
+    - target: {fileID: 8858499153536172996, guid: 186354426764bfa4a87f2e7051363705, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1021,6 +1033,11 @@ Transform:
   - {fileID: 440516755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1820987307 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8858499153536172996, guid: 186354426764bfa4a87f2e7051363705, type: 3}
+  m_PrefabInstance: {fileID: 306324716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1836270021
 GameObject:
   m_ObjectHideFlags: 0
