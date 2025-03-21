@@ -593,7 +593,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1088742525}
   - component: {fileID: 1088742524}
-  - component: {fileID: 1088742526}
   m_Layer: 0
   m_Name: 0620_SugarGame_Full_MZ_V2
   m_TagString: Music
@@ -712,14 +711,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1779741982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1088742526
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088742523}
-  m_Enabled: 1
 --- !u!1 &1199149304
 GameObject:
   m_ObjectHideFlags: 0

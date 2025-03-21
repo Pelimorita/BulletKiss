@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 1567738264865792107}
   - component: {fileID: 1534910184858548191}
   - component: {fileID: 1420998879254980538}
+  - component: {fileID: 3552231862219988081}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -323,6 +324,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 0}
   timer: 0
+--- !u!114 &3552231862219988081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038143337033304771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d669215836f0c4eabd64aab32dc774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 15
 --- !u!1 &6858877244576695959
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b8f44ea40b51fc344bfa988aa9cad67e, type: 2}
+    - target: {fileID: 5762902411660218455, guid: 1235f6fdfe904874cab3c83e4a67727c, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5762902411667128209, guid: 1235f6fdfe904874cab3c83e4a67727c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -404,6 +422,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5762902411667128209, guid: 1235f6fdfe904874cab3c83e4a67727c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762902411667481125, guid: 1235f6fdfe904874cab3c83e4a67727c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5762902411667481585, guid: 1235f6fdfe904874cab3c83e4a67727c, type: 3}

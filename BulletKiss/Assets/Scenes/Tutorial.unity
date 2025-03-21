@@ -1498,7 +1498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
       propertyPath: m_text
-      value: 'Use the buttons ASWD of your keyboard to move in the scenario, you
+      value: 'Use the buttons WASD of your keyboard to move in the scenario, you
         can run faster if you press Shift while moving; there is no place to hide,
         no attacks, no hope, only run and try to recover with the medkits.
 
