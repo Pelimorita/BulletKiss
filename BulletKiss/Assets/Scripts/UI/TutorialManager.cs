@@ -43,6 +43,5 @@ public class TutorialManager : MonoBehaviour
         PointsText.points = 0;
         FinishGame.isFinished = false;
         PauseMenu.isPaused = false;
-        Debug.Log("Esto es Tutorial Manager" + FinishGame.isFinished);
     }
 }

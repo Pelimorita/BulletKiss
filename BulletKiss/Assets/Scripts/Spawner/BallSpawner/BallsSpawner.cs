@@ -16,15 +16,25 @@ public class BallsSpawner : MonoBehaviour
 
     public float objectLifetime; 
 
+    public float TimeControlIncrement = 1f;
+    public float TimeControl = 0f;
 
 
 
     void Update()
     {
-        if(Time.time > lastSpawnedTime + frequency) {
+
+        TimeControl += TimeControlIncrement * Time.deltaTime;
+
+
+        if(TimeControl > 20)
+        {
+            if(Time.time > lastSpawnedTime + frequency) {
             Spawn();
             lastSpawnedTime = Time.time;
         }
+        }
+        
         
     }
 

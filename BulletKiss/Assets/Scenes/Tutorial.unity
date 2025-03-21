@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 50bf15468c19e0e40b5bf26662770a34, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_Sun: {fileID: 368920216}
+  m_IndirectSpecularColor: {r: 0.35702324, g: 0.6970393, b: 0.7235334, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -459,7 +459,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -579,7 +579,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1444,9 +1444,127 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385630181}
     m_Modifications:
+    - target: {fileID: 1597262555920390992, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597262555920390992, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597262555920390992, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567456983622169237, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567456983622169237, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567456983622169237, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724342089286043442, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724342089286043442, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724342089286043442, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952443885263529002, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952443885263529002, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952443885263529002, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
     - target: {fileID: 6900978244927781459, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
       propertyPath: m_Name
       value: UITutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_text
+      value: 'Use the buttons ASWD of your keyboard to move in the scenario, you
+        can run faster if you press Shift while moving; there is no place to hide,
+        no attacks, no hope, only run and try to recover with the medkits.
+
+
+        Are
+        you sure you want to play?
+
+
+        Click the Start button and show your
+        skills'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5698112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03332855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.3395965
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368586038698219715, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029471136653974424, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029471136653974424, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029471136653974424, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029471136653974424, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4287694935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379145836055295104, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379145836055295104, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379145836055295104, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383238596373457019, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383238596373457019, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383238596373457019, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.34117648
       objectReference: {fileID: 0}
     - target: {fileID: 8471740357376222842, guid: 3b861e15c5279764d969c91a8c623481, type: 3}
       propertyPath: m_LocalPosition.x

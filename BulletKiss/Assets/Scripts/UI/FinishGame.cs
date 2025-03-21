@@ -27,8 +27,7 @@ public class FinishGame : MonoBehaviour
             isFinished = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            Debug.Log("esto es FinishGame" + isFinished);
-            finalMessage.text = "Only " + PointsText.points + " points? Wow! You should uninstall me, so you don't have to touch me again";
+            finalMessage.text = "Only " + PointsText.points + " points? Wow! You should uninstall me, so you don't have to play me again";
         }
     }
     public void FinishButton()
